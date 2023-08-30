@@ -55,7 +55,6 @@ class Login {
                     microsoftBtn.disabled = false;
                     mojangBtn.disabled = false;
                     cancelBtn.disabled = false;
-                    return;
                 }
 
                 let account = {
@@ -128,7 +127,6 @@ class Login {
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
-                return
             }
 
             if (passwordInput.value == "") {
@@ -137,7 +135,6 @@ class Login {
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
-                return
             }
 
             let account_connect = await Mojang.login(mailInput.value, passwordInput.value)
@@ -149,7 +146,6 @@ class Login {
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
                 infoLogin.innerHTML = 'Dirección de correo electrónico o contraseña no válidos'
-                return
             }
 
             let account = {
@@ -216,7 +212,6 @@ class Login {
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
-                return
             }
 
             if (mailInput.value.length < 3) {
@@ -225,7 +220,6 @@ class Login {
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
-                return
             }
 
             let account_connect = await Mojang.login(mailInput.value, passwordInput.value)
@@ -237,7 +231,6 @@ class Login {
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
                 infoLogin.innerHTML = 'Dirección de correo electrónico o contraseña no válidos'
-                return
             }
 
             let account = {
